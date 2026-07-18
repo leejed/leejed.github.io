@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(open -a \"Google Chrome\" \"/Users/leejueun/Desktop/썬트리/index.html\")",
+      "Bash(screencapture -x \"/private/tmp/claude-501/-Users-leejueun-Desktop----/b848b30d-bdb0-416a-8a48-55124bffba7e/scratchpad/site-check.png\")",
+      "Bash(python3 -m http.server 8842)",
+      "Bash(curl -s http://localhost:8842/index.html)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8842/styles.css)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:8842/script.js)",
+      "Bash(kill %1)",
+      "Bash(python3 -m http.server 8843)",
+      "Bash(curl -s -o /dev/null -w \"index.html: %{http_code}\\\\n\" http://localhost:8843/index.html)",
+      "Bash(curl -s -o /dev/null -w \"styles.css: %{http_code}\\\\n\" http://localhost:8843/styles.css)",
+      "Bash(curl -s -o /dev/null -w \"script.js: %{http_code}\\\\n\" http://localhost:8843/script.js)",
+      "Bash(lsof -ti:8843 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)"
+    ]
+  }
+}

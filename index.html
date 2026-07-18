@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>leejed</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<img id="cursorFollower" class="cursor-follower" src="image/오리너구리.jpg" alt="">
+
+<header class="site-header">
+  <div class="header-left">
+    <button class="tab active" data-tab="leejed">leejed</button>
+  </div>
+  <div class="header-right">
+    <button class="tab" data-tab="about">About</button>
+    <button class="tab" data-tab="shop">Shop</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- leejed view: grid view (left) + list view (right), 3:1 -->
+  <section class="view active" id="view-leejed">
+    <div class="layout">
+
+      <!-- LEFT: 그리드뷰 -->
+      <section class="grid-view" id="gridView">
+        <div class="work-hero" id="workHero">
+          <div class="placeholder-img" id="heroImage"></div>
+          <img class="hero-photo" id="heroPhoto" alt="">
+        </div>
+
+        <div class="work-description">
+          <div class="desc-col">
+            <h3>Concept</h3>
+            <p id="conceptText"></p>
+          </div>
+          <div class="desc-col">
+            <h3>Process</h3>
+            <p id="processText"></p>
+          </div>
+        </div>
+
+        <div class="detail-grid" id="detailGrid"></div>
+      </section>
+
+      <!-- RIGHT: 리스트뷰 -->
+      <aside class="list-view" id="listView">
+        <div class="work-list" id="workList"></div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- About view -->
+  <section class="view" id="view-about">
+    <div class="static-page">
+      <h2>About</h2>
+      <p>여기에 소개 텍스트가 들어갑니다. (더미 콘텐츠)</p>
+    </div>
+  </section>
+
+  <!-- Shop view -->
+  <section class="view" id="view-shop">
+    <div class="static-page">
+      <h2>Shop</h2>
+      <p>여기에 샵 콘텐츠가 들어갑니다. (더미 콘텐츠)</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
