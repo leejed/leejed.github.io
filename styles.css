@@ -80,7 +80,6 @@ button {
 
 .header-left .tab {
   color: var(--text);
-  font-weight: 600;
 }
 
 .tab:hover {
@@ -266,14 +265,18 @@ button {
 /* ---------- responsive ---------- */
 
 @media (max-width: 880px) {
+  .cursor-follower {
+    display: none;
+  }
   .site-header {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr auto;
   }
   .header-left {
     padding: 0 20px;
   }
   .header-right {
-    padding: 0 12px;
+    justify-content: flex-end;
+    padding: 0 20px;
     gap: 12px;
   }
   .layout {
